@@ -1,0 +1,101 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--body-background);
+  background-image: url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-bottom.svg');
+  background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw),
+    left calc(40vw + 25%) top calc(72vh - 10vw);
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.profile-card {
+  background-color: var(--card-background);
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  border-radius: 15px;
+  width: 374px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.profile-card__header {
+  background-image: url('../images/bg-pattern-card.svg');
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 140px;
+}
+
+.profile-card__image {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  max-width: 96px;
+  max-height: 96px;
+  margin-bottom: -48px;
+}
+
+.profile-card__content {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.profile-card__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.profile-card__age {
+  margin-left: 9.5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.profile-card__location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.profile-card__footer {
+  margin-top: 28px;
+  border-top: 1px solid var(--misc-color);
+  padding-block: 24px;
+  padding-inline: 47px 54px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stats__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 9px;
+}
+
+.stats__description {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    width: 326px;
+  }
+}
