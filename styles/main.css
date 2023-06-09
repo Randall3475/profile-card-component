@@ -30,8 +30,6 @@ body {
 .profile-card__image {
   border: 5px solid #ffffff;
   border-radius: 50%;
-  max-width: 96px;
-  max-height: 96px;
   margin-bottom: -48px;
 }
 
